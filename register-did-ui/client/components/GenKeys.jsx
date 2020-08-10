@@ -11,6 +11,7 @@ class GenKeys extends Component {
     return (
       <Fragment>
         <button
+          data-testid="gen-keys-btn"
           className="btn btn-info"
           type="button"
           onClick={this.props.genKey}

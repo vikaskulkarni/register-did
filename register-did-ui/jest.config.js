@@ -1,7 +1,8 @@
 module.exports = {
-  "testRegex": "((\\.|/*.)(spec))\\.jsx$",
-  "moduleNameMapper": {
-    "\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules"
+  testRegex: "((\\.|/*.)(spec))\\.jsx$",
+  moduleNameMapper: {
+    "\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules",
   },
-  setupFilesAfterEnv: ['./jest.setup.js'],
-}
+  setupFiles: ["<rootDir>/.jest/setEnvVars.js"],
+  setupFilesAfterEnv: ["./jest.setup.js"],
+};

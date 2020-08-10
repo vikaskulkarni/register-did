@@ -1,6 +1,5 @@
 import request, { getContextualURL } from "../utils/request";
 import { call, put } from "redux-saga/effects";
-import { resetNextButton } from "./generateKeys";
 
 export const JWS_GEN = "JWS_GEN";
 export const JWS_GEN_SUCCESS = "JWS_GEN_SUCCESS";
