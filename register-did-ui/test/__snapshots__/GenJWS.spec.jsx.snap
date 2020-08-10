@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders GenJWS as expected 1`] = `
+Array [
+  <button
+    className="btn btn-info"
+    type="button"
+  >
+    Generate JWT Web Signature
+  </button>,
+  <div
+    className="py-2"
+  >
+    <div
+      className="copy-icon"
+      data-testid="copy-icon"
+      onClick={[Function]}
+    >
+      <i
+        className="fa fa-copy"
+      >
+        Copy Payload
+      </i>
+    </div>
+    <textarea
+      cols={94}
+      readOnly={true}
+      rows={10}
+      style={
+        Object {
+          "resize": "none",
+        }
+      }
+      value="\\"dummy data\\""
+      wrap="hard"
+    />
+  </div>,
+]
+`;

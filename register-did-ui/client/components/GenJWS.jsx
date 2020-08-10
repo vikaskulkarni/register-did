@@ -30,6 +30,7 @@ class GenJWS extends Component {
         </button>
         <div className="py-2">
           <div
+            data-testid="copy-icon"
             className={this.props.jwsValue ? "copy-icon" : "copy-icon-disabled"}
             onClick={() => {
               copyToClipBoard(this.props.jwsValue);
