@@ -12,11 +12,11 @@ docker-compose up --build --remove-orphans
 This will bring up;
 
 ```
-Eureka Server
-ZUUL Server
-Register DID Issuer
-Register DID Verifier
-Register DID UI
+Eureka Server - JAVA
+ZUUL Server - JAVA
+Register DID Issuer - NodeJS
+Register DID Verifier - NodeJS
+Register DID UI - ReactJS
 ```
 
 Note: For the first time, it will be slow as it will build the images. I have not published them to the docker-registry for simplicity
@@ -45,6 +45,11 @@ npm install
 npm build
 npm start or npm run start-dev
 ```
+
+# Test Frameworks
+
+NodeJS - Mocha, Chai, Supertest
+ReactJS - Jest
 
 To run tests
 
