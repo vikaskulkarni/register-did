@@ -1,26 +1,27 @@
 # register-did
+
 A POC on Decentralised Identifiers
 
-With Docker
+## With Docker
+
 ```
 cd register-did
 docker-compose up --build --remove-orphans
 ```
+
 This will bring up;
+
 ```
 Eureka Server
 ZUUL Server
 Register DID Issuer
 Register DID Verifier
+Register DID UI
 ```
 
-```
-cd register-did-ui
-npm install
-npm start or npm run start-dev
-```
+Note: For the first time, it will be slow as it will build the images. I have not published them to the docker-registry for simplicity
 
-Without Docker
+## Without Docker
 
 ```
 cd register-did
@@ -41,11 +42,12 @@ npm start
 
 cd register-did-ui
 npm install
+npm build
 npm start or npm run start-dev
 ```
-Note: Without Docker, the Verification end point will not work (Work in progress)
 
 To run tests
+
 ```
 cd register-did-service-issuer
 npm install
@@ -55,3 +57,5 @@ cd register-did-service-verifier
 npm install
 npm test
 ```
+
+![](demo.gif)
