@@ -1,7 +1,9 @@
 {
-  "name": "register-did-service",
-  "version": "0.0.0",
+  "name": "register-did-service-issuer",
+  "version": "1.0.0",
   "main": "./bin/www",
+  "author": "Vikas Kulkarni",
+  "license": "ISC",
   "scripts": {
     "start": "EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=serviceregistry node ./bin/www",
     "test": "./node_modules/.bin/mocha test/**/*.js"

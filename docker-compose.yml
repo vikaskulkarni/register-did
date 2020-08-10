@@ -10,6 +10,8 @@ services:
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://serviceregistry:8761/eureka
 
   zuul-server-vk:
+    depends_on:
+      - "eureka-server-vk"
     container_name: gateway
     hostname: gateway
     build: ./zuul
@@ -20,6 +22,9 @@ services:
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://serviceregistry:8761/eureka
 
   register-did-service-issuer:
+    depends_on:
+      - "eureka-server-vk"
+      - "zuul-server-vk"
     build: ./register-did-service-issuer
     volumes:
       - .:/issuer
@@ -28,9 +33,23 @@ services:
     restart: always
 
   register-did-service-verfier:
+    depends_on:
+      - "eureka-server-vk"
+      - "zuul-server-vk"
     build: ./register-did-service-verfier
     volumes:
       - .:/verifier
     ports:
       - "3004:3004"
+    restart: always
+
+  register-did-ui:
+    depends_on:
+      - "register-did-service-issuer"
+      - "register-did-service-verfier"
+    build: ./register-did-ui
+    volumes:
+      - .:/didUI
+    ports:
+      - "3005:3005"
     restart: always

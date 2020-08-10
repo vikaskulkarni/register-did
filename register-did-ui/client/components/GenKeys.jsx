@@ -19,7 +19,9 @@ class GenKeys extends Component {
         </button>
         <div className="p-3">
           {this.props.uri && (
-            <a href={getContextualURL("downloadPub")}>Download Public Key</a>
+            <a href={getContextualURL("did-issuer/downloadPub")}>
+              Download Public Key
+            </a>
           )}
         </div>
       </Fragment>
