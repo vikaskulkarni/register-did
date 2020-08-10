@@ -1,4 +1,4 @@
-# register-did
+# REGISTER-DID
 
 A POC on Decentralised Identifiers
 
@@ -54,6 +54,10 @@ npm install
 npm test
 
 cd register-did-service-verifier
+npm install
+npm test
+
+cd register-did-ui
 npm install
 npm test
 ```
