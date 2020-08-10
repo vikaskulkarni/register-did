@@ -25,7 +25,7 @@ Note: For the first time, it will be slow as it will build the images. I have no
 
 Once its up, UI can be accessed via, http://localhost:3005/
 
-# API Documentation
+## API Documentation
 
 Issuer
 http://localhost:8081/did-issuer/api-docs/
@@ -58,7 +58,7 @@ npm build
 npm start or npm run start-dev
 ```
 
-# API Documentation
+## API Documentation
 
 Issuer
 http://localhost:3003/api-docs
