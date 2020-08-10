@@ -1,0 +1,63 @@
+[
+  Layer {
+    handle: [Function: bound dispatch],
+    name: 'bound dispatch',
+    params: undefined,
+    path: undefined,
+    keys: [],
+    regexp: /^\/?$/i { fast_star: false, fast_slash: false },
+    route: Route { path: '/', stack: [Array], methods: [Object] }
+  },
+  Layer {
+    handle: [Function: bound dispatch],
+    name: 'bound dispatch',
+    params: undefined,
+    path: undefined,
+    keys: [],
+    regexp: /^\/health\/?$/i { fast_star: false, fast_slash: false },
+    route: Route { path: '/health', stack: [Array], methods: [Object] }
+  },
+  Layer {
+    handle: [Function: bound dispatch],
+    name: 'bound dispatch',
+    params: undefined,
+    path: undefined,
+    keys: [],
+    regexp: /^\/generateKeys\/?$/i { fast_star: false, fast_slash: false },
+    route: Route { path: '/generateKeys', stack: [Array], methods: [Object] }
+  },
+  Layer {
+    handle: [Function: bound dispatch],
+    name: 'bound dispatch',
+    params: undefined,
+    path: undefined,
+    keys: [],
+    regexp: /^\/generateJWS\/?$/i { fast_star: false, fast_slash: false },
+    route: Route { path: '/generateJWS', stack: [Array], methods: [Object] }
+  },
+  Layer {
+    handle: [Function: bound dispatch],
+    name: 'bound dispatch',
+    params: undefined,
+    path: undefined,
+    keys: [],
+    regexp: /^\/downloadPub\/?$/i { fast_star: false, fast_slash: false },
+    route: Route { path: '/downloadPub', stack: [Array], methods: [Object] }
+  },
+  Layer {
+    handle: [Function: bound dispatch],
+    name: 'bound dispatch',
+    params: undefined,
+    path: undefined,
+    keys: [],
+    regexp: /^\/issueVerifiedCredential\/?$/i {
+      fast_star: false,
+      fast_slash: false
+    },
+    route: Route {
+      path: '/issueVerifiedCredential',
+      stack: [Array],
+      methods: [Object]
+    }
+  }
+]

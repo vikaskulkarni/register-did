@@ -25,6 +25,14 @@ Note: For the first time, it will be slow as it will build the images. I have no
 
 Once its up, UI can be accessed via, http://localhost:3005/
 
+# API Documentation
+
+Issuer
+http://localhost:8081/did-issuer/api-docs/
+
+Verifier
+http://localhost:8081/did-verifier/api-docs/
+
 ## Without Docker
 
 ```
@@ -49,6 +57,14 @@ npm install
 npm build
 npm start or npm run start-dev
 ```
+
+# API Documentation
+
+Issuer
+http://localhost:3003/api-docs
+
+Verifier
+http://localhost:3004/api-docs
 
 # Test Frameworks
 

@@ -8,6 +8,11 @@ let indexRouter = require("./routes/routes");
 
 let app = express();
 
+const swaggerUi = require("swagger-ui-express");
+const swaggerDocument = require("./swagger.json");
+
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 let cors = require("cors");
 app.use(cors());
 

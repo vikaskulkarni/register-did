@@ -1,0 +1,60 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Verifier service generates public private key pair and uses Verifiable Credentials library to sign and issue a credential",
+    "version": "1.0.0",
+    "title": "DID Verifier",
+    "contact": {
+      "email": "kulkarni.vikasdk@gmail.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "schemes": ["http"],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Returns a success message",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "summary": "Returns a success message",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        }
+      }
+    },
+    "/verify/{did}": {
+      "get": {
+        "summary": "Based on the issued DID, the verification is a success or a failure",
+        "parameters": [
+          {
+            "name": "did",
+            "in": "path",
+            "description": "Issuesd DID",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Issuer service generates public private key pair and uses Verifiable Credentials library to sign and issue a credential",
+    "version": "1.0.0",
+    "title": "DID Issuer",
+    "contact": {
+      "email": "kulkarni.vikasdk@gmail.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "schemes": ["http"],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Returns a success message",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "summary": "Returns a success message",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        }
+      }
+    },
+    "/generateKeys": {
+      "post": {
+        "summary": "Generates random public private keys",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "successful keys operation"
+          }
+        }
+      }
+    },
+    "/generateJWS": {
+      "post": {
+        "summary": "Generates JWS based on generated public private keys",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "successful JWS operation"
+          }
+        }
+      }
+    },
+    "/downloadPub": {
+      "post": {
+        "summary": "API to download generated public key",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "successful key file download"
+          }
+        }
+      }
+    },
+    "/issueVerifiedCredential": {
+      "post": {
+        "summary": "Builds Verified Presentation and signs the Verified Credential with DID. Stores the DID for future verification",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "successful issuing and signing of credential"
+          }
+        }
+      }
+    }
+  }
+}
