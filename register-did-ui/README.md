@@ -1,20 +1,21 @@
-# my-react16-redux4-webpack4-template
-
-Simple template for React-Redux projects
-
-In Development mode
+# In Development mode
 
 ```
 npm install
 npm run start-dev
 ```
 
-In Production mode
+http://localhost:65132/
+
+# In Production mode
 
 ```
 npm build
 npm start
 ```
 
-Tests
+http://localhost:3005
+
+# Tests
+
 `npm test`
