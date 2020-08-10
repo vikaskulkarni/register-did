@@ -1,0 +1,19 @@
+.green-check {
+    float: right;
+    display: inline;
+    margin-left: 10px;
+}
+
+.red-cross {
+    content: "X";
+    color: red($color: #000000);
+    float: right;
+    display: inline;
+    margin-left: 10px;
+}
+
+.green-check:after {
+    content: "\2713";
+    color: #5cb85c;
+    font-size: 2rem;
+}

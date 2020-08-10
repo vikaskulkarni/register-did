@@ -1,0 +1,12 @@
+.mainStyle {
+  background: rgb(54, 199, 219);
+  background: linear-gradient(
+    90deg,
+    rgba(54, 199, 219, 1) 0%,
+    rgba(82, 152, 55, 0.23433123249299714) 60%,
+    rgba(163, 217, 224, 1) 85%
+  );
+  width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+}

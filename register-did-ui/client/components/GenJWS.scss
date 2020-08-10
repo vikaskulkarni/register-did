@@ -1,0 +1,17 @@
+.copy-icon {
+    pointer-events: all;
+    position: absolute;
+    right: 18%;
+    cursor: pointer;
+    color: #3379b7;
+    font-size: 1.1rem;
+}
+
+.copy-icon-disabled {
+    pointer-events: none;
+    position: absolute;
+    right: 18%;
+    cursor: default;
+    color: gray;
+    font-size: 1.1rem;
+}

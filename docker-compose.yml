@@ -1,0 +1,36 @@
+version: "3.7"
+services:
+  eureka-server-vk:
+    container_name: serviceregistry
+    hostname: serviceregistry
+    build: ./eureka
+    ports:
+      - "8761:8761"
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://serviceregistry:8761/eureka
+
+  zuul-server-vk:
+    container_name: gateway
+    hostname: gateway
+    build: ./zuul
+    ports:
+      - "8181:8181"
+      - "8081:8081"
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://serviceregistry:8761/eureka
+
+  register-did-service-issuer:
+    build: ./register-did-service-issuer
+    volumes:
+      - .:/issuer
+    ports:
+      - "3003:3003"
+    restart: always
+
+  register-did-service-verfier:
+    build: ./register-did-service-verfier
+    volumes:
+      - .:/verifier
+    ports:
+      - "3004:3004"
+    restart: always

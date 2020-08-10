@@ -1,0 +1,1 @@
+{"kty":"EC","kid":"#key-1","crv":"P-256K","x":"6XlPPYriNj9n2g-6oocE061IkOMeMWzcbDeEFgmJj40","y":"Cs3IdoYq-GyrRpztPcouVP4LUnpxuQPkX2AKynM29aQ","defaultEncryptionAlgorithm":"none","defaultSignAlgorithm":"ES256K"}
