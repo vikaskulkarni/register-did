@@ -2,6 +2,8 @@
 
 A POC on Decentralised Identifiers
 
+DB: I am using mlab that provides mongo as a service to store data.
+
 ## With Docker
 
 ```
@@ -20,6 +22,8 @@ Register DID UI - ReactJS
 ```
 
 Note: For the first time, it will be slow as it will build the images. I have not published them to the docker-registry for simplicity
+
+Once its up, UI can be accessed via, http://localhost:3005/
 
 ## Without Docker
 
@@ -67,4 +71,10 @@ npm install
 npm test
 ```
 
+# Demo
+
 ![](demo.gif)
+
+# High Level Architecture
+
+![](architecture.jpg)
