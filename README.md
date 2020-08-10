@@ -66,7 +66,7 @@ http://localhost:3003/api-docs
 Verifier
 http://localhost:3004/api-docs
 
-# Test Frameworks
+## Test Frameworks
 
 NodeJS - Mocha, Chai, Supertest
 ReactJS - Jest
@@ -87,10 +87,10 @@ npm install
 npm test
 ```
 
-# Demo
+## Demo
 
 ![](demo.gif)
 
-# High Level Architecture
+## High Level Architecture
 
 ![](architecture.jpg)
