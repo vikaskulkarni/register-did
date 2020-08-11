@@ -23,6 +23,20 @@ Register DID UI - ReactJS
 
 Note: For the first time, it will be slow as it will build the images. I have not published them to the docker-registry for simplicity
 
+You should see, this in the logs:
+
+```
+register-did-service-issuer_1   | registered with eureka:  did-issuer/3d95e328cd55
+register-did-service-issuer_1   | retrieved full registry successfully
+register-did-service-issuer_1   | eureka host  serviceregistry
+register-did-service-issuer_1   | did-issuer Service Registered
+serviceregistry                 | 2020-08-11 01:03:51.660  INFO 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DID-VERIFIER/b5c04b780a42 with status UP (replication=false)
+register-did-service-verfier_1  | registered with eureka:  did-verifier/b5c04b780a42
+register-did-service-verfier_1  | retrieved full registry successfully
+register-did-service-verfier_1  | eureka host  serviceregistry
+register-did-service-verfier_1  | did-verifier Service Registered
+```
+
 Once its up, UI can be accessed via, http://localhost:3005/
 
 ## API Documentation
