@@ -40,7 +40,7 @@ class VerifyJWS extends Component {
               Verify JWT Web Signature
             </button>
             {this.props.jwsValue && <div className="green-check"></div>}
-            {!this.props.jwsValue && <div className="red-cross"></div>}
+            {!this.props.jwsValue && <div className="red-cross">X</div>}
           </div>
         </div>
         <div className="py-2">
@@ -50,14 +50,26 @@ class VerifyJWS extends Component {
           >
             <i className="fa fa-copy">Copy Verified Signature</i>
           </div>
-          <textarea
-            style={{ resize: "none" }}
-            value={JSON.stringify(this.props.jwsValue, 0, 4)}
-            rows={10}
-            cols={94}
-            readOnly
-            wrap="hard"
-          />
+          {this.props.jwsValue && (
+            <textarea
+              style={{ resize: "none" }}
+              value={JSON.stringify(this.props.jwsValue, 0, 4)}
+              rows={10}
+              cols={94}
+              readOnly
+              wrap="hard"
+            />
+          )}
+          {!this.props.jwsValue && (
+            <textarea
+              style={{ resize: "none" }}
+              value="Not Verified OR Invalid"
+              rows={10}
+              cols={94}
+              readOnly
+              wrap="hard"
+            />
+          )}
         </div>
       </Fragment>
     );

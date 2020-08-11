@@ -6,6 +6,7 @@
   "license": "ISC",
   "scripts": {
     "start": "EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=serviceregistry  node ./bin/www",
+    "start-dev": "PORT=3006 node ./bin/www",
     "test": "./node_modules/.bin/mocha 'test/**/*.js'"
   },
   "dependencies": {

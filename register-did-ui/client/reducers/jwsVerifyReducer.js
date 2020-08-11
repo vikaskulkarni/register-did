@@ -1,4 +1,8 @@
-import { JWS_VERIFY, JWS_VERIFY_SUCCESS } from "../actions/verifyJWS";
+import {
+  JWS_VERIFY,
+  JWS_VERIFY_SUCCESS,
+  JWS_VERIFY_FAIL,
+} from "../actions/verifyJWS";
 
 const jwsVerifyReducer = (state = {}, action) => {
   switch (action.type) {
@@ -10,6 +14,11 @@ const jwsVerifyReducer = (state = {}, action) => {
       return {
         ...state,
         jwsValue: action.response.signedVC,
+      };
+    case JWS_VERIFY_FAIL:
+      return {
+        ...state,
+        jwsValue: undefined,
       };
 
     default:
