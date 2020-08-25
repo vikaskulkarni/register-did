@@ -108,3 +108,8 @@ npm test
 ## High Level Architecture
 
 ![](architecture.jpg)
+
+## Presentation
+
+https://www.slideshare.net/vikasdk/decentralised-identifiers-238216830
+
